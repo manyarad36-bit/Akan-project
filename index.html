@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Get to know your Akan Name</h1>
+    <p>An Akan name is a traditional name used by the Akan people of Ghana (and parts of Côte d’Ivoire)
+        . It’s most famously a day name—given based on the day of the week a person is born,
+         and it’s believed that each day carries certain personality traits.</p>
+
+    <form id="akanform">
+
+        <label for="dob">Birthdate:</label><br>
+        <input type="number" id="dob" required min="1" max="31"><br><br>
+
+        <label for="month">month:</label><br>
+        <input type="number" id="month" required min="1" max="12"><br><br>
+
+        <label for="year">year:</label><br>
+        <input type="number" id="year" required min="1" placeholder="1900"><br><br>
+
+        <label>Gender:</label><br>
+
+        <label>
+            <input type="radio" name="gender" value="male" required>
+            Male
+        </label><br>
+
+        <label>
+            <input type="radio" name="gender" value="female">
+            Female
+        </label><br><br>
+
+        <button type="submit">Generate Akan Name</button>
+
+    </form>
+
+    <h2>Result:</h2>
+    <p id="akanResult"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
